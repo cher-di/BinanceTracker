@@ -1,4 +1,5 @@
-FROM python:3.9-slim-bullseye
+FROM python:3.9-alpine
+RUN apk update && apk add tzdata
 COPY . /binance
 WORKDIR /binance
 RUN python3 -m pip install -r requirements.txt
