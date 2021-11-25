@@ -1,0 +1,1 @@
+INSERT INTO labels (name) VALUES ('WINUSDT');

@@ -1,0 +1,7 @@
+FROM python:3.9-alpine
+RUN apk update && apk add tzdata
+COPY . /binance
+WORKDIR /binance
+RUN python3 -m pip install -r requirements.txt
+ENTRYPOINT ["python3", "-m", "binance.collector"]
+CMD ["python3", "-m", "binance.collector", "--help"]

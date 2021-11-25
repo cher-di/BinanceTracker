@@ -1,0 +1,16 @@
+# python
+venv/
+__pycache__/
+
+# vscode
+.vscode/
+
+# pytest
+pytest.ini
+.pytest_cache/
+
+# git
+.git
+
+LICENSE
+README.md
