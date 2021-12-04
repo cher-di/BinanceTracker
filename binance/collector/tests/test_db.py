@@ -9,8 +9,8 @@ from binance.collector.db import DB
 
 
 TESTS_ROOT = os.path.dirname(os.path.abspath(__file__))
-COLLECTOR_ROOT = os.path.dirname(TESTS_ROOT)
-CREATE_TABLES_SCRIPT = os.path.join(COLLECTOR_ROOT, 'sql/create_tables.sql')
+CREATE_TABLES_SCRIPT = os.path.abspath(
+    os.path.join(TESTS_ROOT, '../../../sql/create_tables.sql'))
 
 
 @pytest.fixture
